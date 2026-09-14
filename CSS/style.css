@@ -2167,33 +2167,28 @@ body.dark-theme .header {
     z-index: 3;
 }
 
-/* Badge */
+/* Badge outside the box */
 .neon-badge {
-    position: absolute;
-    bottom: 20px;
-    right: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1.5rem;
     background: rgba(10, 15, 30, 0.85);
     backdrop-filter: blur(12px);
     color: #fff;
-    padding: 9px 18px;
+    padding: 10px 22px;
     border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    z-index: 4;
     border: 1px solid rgba(0, 245, 212, 0.4);
     box-shadow: 0 0 20px rgba(0, 245, 212, 0.2);
-    animation: badgeFloat 4s ease-in-out infinite;
+    justify-self: end;          /* keeps it aligned to the right under the image */
 }
 
 .neon-badge i {
     color: #00f5d4;
-    font-size: 1.15rem;
-    text-shadow: 0 0 8px #00f5d4;
+    font-size: 1.2rem;
 }
-
 /* Animations */
 @keyframes spin {
     from { transform: rotate(0deg); }
