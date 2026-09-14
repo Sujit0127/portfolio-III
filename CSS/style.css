@@ -1805,8 +1805,7 @@ body.dark-theme .header {
     }
 
     .profile-badge {
-        right: 0;
-        left: 3;
+        right: 10;
         bottom: 0;
         font-size: .65rem;
     }
